@@ -1,0 +1,416 @@
+/*****************app Header styling********************/
+.header-parent {
+    border-bottom: solid 1px #0d1b2a;
+    background-color: #b77ecead;
+}
+.header-parent :hover{
+    background-color: #a0058b;
+}
+  
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 ;
+    
+}   
+.logo {
+    height: 45px;
+    
+}
+
+/***********************Navbar styling*******************/
+     /*---------------main nav (ul) ------------styling*/
+.main-nav {
+    display: flex;
+    list-style: none;
+    width: 600px;
+    justify-content: center;
+    padding: 8px;
+    margin-bottom: 12cpx;
+    margin-right: 200px;
+   
+    /* border: 2px solid red; */
+    
+}
+
+
+
+/*these are Navbar lis inside ul( main-nav)*/
+.header-nav-options {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-style: hidden;
+    border-radius: 7px;
+    text-align: center;
+    padding-left:2px;
+    padding-right: 2px;
+}
+.header-nav-options :hover{
+    background-color: #CDD1C4;
+    color: #0d1b2a;
+    border-style: hidden;
+    border-radius: 10px;
+    
+}
+
+/*these are div inside navbar li of ul( main-nav)*/
+/*I have changed div to NavLinks but not changing classname*/
+.header-nav-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0d1b2a;
+    border-style: hidden;
+    border-radius: 8px;
+    text-decoration: none;
+    
+}  
+.header-nav-div span {
+    /* display: block; */
+    align-self: center;
+    
+}
+
+/*this is submenu (ul) below each navbar li*/
+.header-nav-ul {
+    position: absolute;
+    top: 90%;
+    list-style: none;
+    width: 150px;
+    margin-top: 2px;
+    
+}
+
+/*these are lis inside submenu (ul) */
+.sub-menu-options {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #712b7a;
+    border-style: hidden;
+    border-radius: 8px;
+}
+li.sub-menu-options :hover{
+    background-color: #e3c327;
+}
+
+/*these are Navlinks inside lis of submenu (ul) */ 
+/*Before inside li there was div*/
+/*Now I have changed  div to Navlinks */
+.sub-menu-div {
+    display: flex;
+    align-items: center;
+    border-style: hidden;
+    border-radius: 8px;
+    padding-left: 1rem;
+    margin-top: 3px;
+    margin-right: 5px;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}  
+
+/*this is grandchildren (submenu(ul)) apears on right side of li of submenu(ul)  */
+.sub-menu-ul {
+    position: absolute;
+    /* background-color: #a0086d; */
+    list-style: none;
+    top: 20px;
+    left: 100%;
+    width: 150px;
+    
+}
+/*these are lis of grandchildren (submenu(ul))*/
+.grand-child-link {
+    
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #712b7a;
+    border-style: hidden;
+    border-radius: 8px;
+    white-space: nowrap;
+    /* padding-left: 1rem; */
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+ li.grand-child-link:hover{
+   width: 100%;
+   height: 40px;
+   background-color: #bdb485;
+   color: #0d1b2a;
+} 
+/*these are NavLinks inside lis of grandchildren (submenu(ul))*/
+.grand-child-link a{
+    text-decoration: none;
+    
+}
+
+.mobile-menu-toggle {
+    display: none;
+}
+
+
+
+  
+
+
+/*main content of pages*/
+.main-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 2rem;
+}
+.main-content h1{
+    color: #0d1b2a;
+}
+
+/***************************mobile view styling**************************/
+
+
+
+/* Add these styles for mobile view */
+
+/********************** Styling for mobile navigation *********************/
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    justify-content: center;
+    /* width: 302px;
+    height: 500px; */
+    background-color: #837c52;
+}
+
+/****************ul of mobile  navbar****************/
+.mobile-header-nav-ul {
+    /* position: relative; */
+    top:10%; 
+    margin-top: 2px;
+    background-color: #0d1b2a;
+   /* background-color: #16c26c; */
+    
+    
+}
+/**li inside ul of mobile  navbar which elements are link one,link two and so on*/
+.mobile-header-nav-options {
+    /* position: relative; */
+    /* height: 40%; */
+    /* width: 200px; */
+    
+    align-items: center;
+    cursor: pointer;
+    border-style: hidden;
+    border-radius: 7px;
+    text-align: start;
+    padding-left:1px;
+    padding-right: 0px;
+    margin-right: 120px;
+    background-color: #7e14e2;
+}
+
+/*these are Navlinks inside lis of ul of mobile  navbar */
+.mobile-header-nav-div {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+    /* height: 63px;
+    width: 100%; */
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    background-color: #0d1b2a; /* Adjust background color as needed */
+    text-decoration: none;
+    color: #333; /* Adjust text color as needed */
+}
+.mobile-header-nav-div span{
+    vertical-align: middle;
+   
+}
+
+/*Navinks hover class*/
+.mobile-header-nav-div:hover{
+    background-color: #8fe258;
+    border: 2px solid #000;
+}
+
+/** theses are ul whose lis are (sub menu 1 ,sub menu 2 and so on)child of lis  link one ,link two**/
+.mobile-sub-menu-options {
+    /* position: relative; */
+    background-color: #2c0092;
+    list-style: none;
+    width: 200px;
+    
+}
+
+/*here I am styling directly Navlinks inside lis (sub menu 1 ,sub menu 2 and so on) of ul*/
+.mobile-sub-menu-div {
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 4px; */
+    /* width: 90%; */
+    background-color:#e6279c; 
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    
+    
+}
+
+.mobile-sub-menu-div span{
+    vertical-align: middle;
+    margin-top: 10px;
+}
+.mobile-sub-menu-div .arrow{
+    position: relative;
+    /* background-color: #4790bb; */
+    margin-left: 90px;
+    margin-top: 0px;
+    bottom: 20px;
+}
+.mobile-sub-menu-div:hover{
+    background-color: yellow;
+    border: 1px dashed #0d1b2a;
+    
+}
+.mobile-sub-menu-div span {
+    align-self: self-start;
+    color: #fff;
+    
+}
+.mobile-sub-menu-div span, .arrow:hover{
+    color: #000;
+}
+  
+  
+  
+/* Styling for grand children ul  */
+.mobile-sub-menu-ul {
+    /* display: none;
+    position: relative; */
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    /* height: 70px;
+    width: 170px; */
+    z-index: 1;
+    background-color: rgb(25, 94, 94);
+}
+ 
+/*these are lis which are (1 grand child ,2 grand child and tree bush plant), in which Navlinks are existing*/  
+.mobile-grand-child-link {
+    /* display: flex;
+    flex-direction: column; */
+    padding-bottom: 5px;
+    /* width: 80%;
+    height: 33%; */
+    list-style: none;
+    background-color: #4790bb; 
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-bottom: 2px;
+    margin-right: 40px;
+    text-decoration: none;
+    
+}
+/*Navlinks styling */
+.mobile-grand-child-link a{
+    text-decoration: none;
+} 
+.mobile-grand-child-link span{
+    color: #fff;
+}
+
+/* Adjust text color as needed */
+
+/*********-------------------Offcanvas styling-------************/
+
+.OffCanvas {
+    /* background-image: url("../public//logo192.png") no-repeat cover ; */
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    width: 90%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust background color and opacity as needed */
+    z-index: 1000; /* Ensure a higher z-index to overlay on top of other elements */
+    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+    /* transform: translateX(-100%); */
+    transition: left 0.3s ease; /* Add a transition for smooth animation */
+  }
+
+  .OffCanvas.open {
+    left: 0; /* Move in from the left when open */
+  }
+  
+ 
+  
+  .OffCanvasBody {
+    padding:2px;
+    color: #fff;
+  }
+
+  
+  
+/* Media query for mobile view */
+  @media (min-width: 400px) and (max-width: 600px) {
+    .header {
+        position: relative;
+        height: 50px;
+      }
+    
+      .mobile-menu-toggle {
+        display: block; 
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        height: 30px;
+        width: 50px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+    
+      .mobile-menu-toggle .bar-icon {
+        width: 70px;
+        height: 30px;
+        margin-bottom: 15px;
+      }
+      .main-nav{
+        display: none;
+      }
+      
+        
+}
+
+@media (width> 600px) {
+    .mobile-nav{
+        display: none;
+    }
+    .OffCanvasHide {
+        display: none;
+    }
+
+
+}

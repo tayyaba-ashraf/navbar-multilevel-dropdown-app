@@ -1,0 +1,14 @@
+.mobile-accordion-header {
+    cursor: pointer;
+  }
+  
+  .mobile-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .mobile-accordion-content.show {
+    max-height: 500px; /* Set an appropriate value based on your content */
+  }
+  
