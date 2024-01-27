@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# navbar with multilevel dropdowns
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is built using react.js and pure CSS is used for styling .It is responsive navbar for all screen views.
 
 ## Available Scripts
 
